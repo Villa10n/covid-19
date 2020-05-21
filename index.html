@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>COVID-19</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container">
+               <span class="navbar-brand mb-0 h1 text-center">Covid-19 en Chile</span>
+          </div>
+     </nav>
+     <div class="container">
+          <button id="actualizar" class="btn btn-block">
+               Actualizar datos <img class="mx-auto" id="spinner" src="img/spinner.gif" width="150">
+          </button>
+          <div class="card mt-4">
+               <div class="card-header">
+                    <h5 class="card-title">Casos totales en Chile<span id="fecha"></span></h5>
+               </div>
+               <div class="card-body">
+                    <p class="card-text btn btn-danger disabled" id="casosTotalesChile"></p>
+               </div>
+          </div>
+          <div class="card mt-4">
+               <div class="card-header">
+                    <h5 class="card-title">Nuevos casos hoy</h5>
+               </div>
+               <div class="card-body">
+                    <p class="card-text btn btn-danger disabled" id="nuevosCasosHoy"></p>
+               </div>
+          </div>
+          <div class="card mt-4">
+               <div class="card-header">
+                    <h5 class="card-title">Total de muertos</h5>
+               </div>
+               <div class="card-body">
+                    <p class="card-text btn btn-danger disabled" id="totalMuertosChile"></p>
+               </div>
+          </div>
+          <div class="card mt-4">
+               <div class="card-header">
+                    <h5 class="card-title">Total de muertos hoy</h5>
+               </div>
+               <div class="card-body">
+                    <p class="card-text btn btn-danger disabled" id="totalMuertosHoyChile"></p>
+               </div>
+          </div>
+          <div class="card mt-4">
+               <div class="card-header">
+                    <h5 class="card-title">Recuperados:</h5>
+               </div>
+               <div class="card-body">
+                    <p class="card-text btn btn-danger disabled" id="totalRecuperadosChile"></p>
+               </div>
+          </div>
+     </div>
+
+
+     <script src="js/index.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>

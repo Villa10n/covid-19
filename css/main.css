@@ -1,0 +1,12 @@
+body {
+     background-color: rgb(100, 100, 100);
+     margin-top: 80px;
+     margin-bottom: 40px;
+}
+#actualizar {
+     background-color: white;
+     font-size: 30px;
+}
+#spinner {
+     display: none;
+}
